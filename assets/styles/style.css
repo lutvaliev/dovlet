@@ -989,6 +989,13 @@ footer{
     .gif{
         right: 0%;
     }
+    .contacts{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .memories_photos{
+        width: 100%;
+    }
 }
 @media(max-width: 540px){
     .agencies{
@@ -1005,6 +1012,9 @@ footer{
     }
     .footer_contacts ul{
         flex-direction: column;
+    }
+    .memories_photos{
+        display: none;
     }
 }
 @media(max-width: 500px){

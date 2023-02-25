@@ -83,7 +83,6 @@ var swiper = new Swiper(".mySwiperPhotos", {
     spaceBetween: 24,
     effect: "cube",
     grabCursor: true,
-    loop: true,
     cubeEffect: {
         shadow: true,
         slideShadows: true,
