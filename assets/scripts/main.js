@@ -81,6 +81,15 @@ var swiper = new Swiper(".mySwiperVideo", {
 var swiper = new Swiper(".mySwiperPhotos", {
     slidesPerView: 1,
     spaceBetween: 24,
+    effect: "cube",
+    grabCursor: true,
+    loop: true,
+    cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 1,
+    },
     navigation: {
         nextEl: ".nextPhoto",
         prevEl: ".prevPhoto",
@@ -97,6 +106,7 @@ $('.events_tab').click(function (e) {
     //Toggle target tab
     $($(this).attr('href')).addClass('active_slider').siblings().removeClass('active_slider');
 });
+
 
 $('.openMenu').click(function () {
     $(this).closest('.container').find('.nav_menu').toggleClass('showMenu')
